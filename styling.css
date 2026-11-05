@@ -5,6 +5,7 @@
 /* == Header == */
 header {
     background-color: whitesmoke;
+    text-align: center;
 }
 
 /*= LOGO = */
@@ -12,6 +13,7 @@ header {
     position: center;
     top: 20px;
     left: 20px;
+    padding: 20px;
 }
 
 .logo img {
