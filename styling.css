@@ -37,3 +37,9 @@ nav a{
     color: yellow;
     display: block;
 }
+
+/* == About Developer == */
+.spencer-t-crosland img{
+    height: 350px;
+    width: 350px;
+}
