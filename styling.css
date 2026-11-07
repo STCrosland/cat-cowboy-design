@@ -55,16 +55,18 @@ nav a:hover{
     color: #038b05;
 }
 
-/* == Home == */
+/* == Welcom Messages == */
 .welcome-message {
     text-align: left;
     margin: 40px;
-}
+} 
 
 .welcome-message h1 {
     text-align: center;
     margin: 40px;
 }
+
+/* == Home == */
 .featured-projects {
     width: 90%;
     max-width: 1400px;
@@ -100,6 +102,7 @@ nav a:hover{
 }
 
 /* == About Developer == */
+
 .spencer-t-crosland img{
     height: 350px;
     width: 350px;
