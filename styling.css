@@ -26,18 +26,33 @@ header {
 
 /* == Navigation == */
 nav{
-    background-color: green;
+    background-color: #038b05;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     height: 50px;
+    padding: auto;
+    box-sizing: border-box;
 }
 
 nav a{
     color: yellow;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 1.5em;
     display: block;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px #f7eb00;
+    border-bottom: 4px #f7eb00;    
+
+}
+
+nav a:hover{
+    background-color: #f7eb00;
+    color: #038b05;
 }
 
 /* == About Developer == */
