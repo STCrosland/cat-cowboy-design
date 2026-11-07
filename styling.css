@@ -56,6 +56,15 @@ nav a:hover{
 }
 
 /* == Home == */
+.featured-projects {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 40px;
+}
 .project-1 img{
     height: 350px;
     width: 350px;
@@ -94,8 +103,9 @@ nav a:hover{
 
 /* == Footer == */
 footer{
-    justify-content: center;
+    text-align: center;
 }
+
 footer img {
     height: 100px;
     width: 100px;
