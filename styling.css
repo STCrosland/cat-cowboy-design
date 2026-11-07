@@ -62,8 +62,13 @@ nav a:hover{
     margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-items: center;
+    
     gap: 40px;
+}
+
+.featured-projects h1 {
+    grid-column: 1 / -1;
+    text-align: center;
 }
 .project-1 img{
     height: 350px;
