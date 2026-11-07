@@ -91,3 +91,13 @@ nav a:hover{
 /* == Grphic Design == */
 
 /* == Services == */
+
+/* == Footer == */
+footer{
+    justify-content: center;
+}
+footer img {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+}
