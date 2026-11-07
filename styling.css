@@ -56,13 +56,21 @@ nav a:hover{
 }
 
 /* == Home == */
+.welcome-message {
+    text-align: left;
+    margin: 40px;
+}
+
+.welcome-message h1 {
+    text-align: center;
+    margin: 40px;
+}
 .featured-projects {
     width: 90%;
     max-width: 1400px;
     margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
     gap: 40px;
 }
 
