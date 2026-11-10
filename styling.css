@@ -87,12 +87,32 @@ nav a:hover{
 }
 
 /* == About Developer == */
-
-.spencer-t-crosland img{
-    height: 350px;
-    width: 350px;
+#spencer-t-crosland{
+    text-align: left;
+    margin: 40px;
 }
 
+#spencer-t-crosland h2 {
+    text-align: center;
+    margin: 40px;
+}
+#spencer-t-crosland img{
+    float: left;
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+}
+
+#why-cat-cowboy{
+    clear: both;
+    text-align: left;
+    margin: 40px;
+}
+
+#why-cat-cowboy h2{
+    text-align: center;
+    margin: 40px;
+}
 
 /* == BYUI Projects Class == */
 .byui-projects {
