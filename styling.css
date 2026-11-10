@@ -109,6 +109,31 @@ nav a:hover{
 }
 
 /* == Wbesites == */
+
+/* BYUI sites */
+.byui-projects {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.byui-projects h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.byui-projects p {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.byui-projects h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
 .wdd131 img {
     height: 350px;
     width: 350px;
