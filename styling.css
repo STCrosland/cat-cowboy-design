@@ -162,6 +162,57 @@ nav a:hover{
 
 /* == Services == */
 
+/*Bundle Packages*/
+#bundle{
+    text-align: left;
+    margin: 40px;
+}
+
+#bundle h2{
+    text-align: left;
+}
+#bundle h3{
+    text-align: left;
+}
+#bundle h4{
+    text-align: left;
+}
+
+/*Graphics Design Packages*/
+#grphic-design{
+    text-align: left;
+    margin: 40px;
+}
+
+#grphic-design h2{
+    text-align: left;
+}
+
+#grphic-design h3{
+    text-align: left;
+}
+
+#grphic-design h4{
+    text-align: left;
+}
+
+/*Web Development Packages*/
+#Web-development-design{
+    text-align: left;
+    margin: 40px;
+}
+
+#Web-development-design h2{
+    text-align: left;
+}
+
+#Web-development-design h3{
+    text-align: left;
+}
+
+#Web-development-design h4{
+    text-align: left;
+}
 /* == Footer == */
 footer{
     text-align: center;
