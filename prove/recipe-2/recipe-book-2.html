@@ -1,0 +1,69 @@
+<!-- /recipes/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Book</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="recipe-book-2.css">
+
+<script defer src="recipe-book-2.js"></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Recipe Book">
+<meta property="og:description" content="Find and save your favorite recipes.">
+<meta property="og:url" content="Your URL">
+<meta property="og:image" content="images/social-preview-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recipe Book">
+<meta name="twitter:description" content="Find and save your favorite recipes.">
+<meta name="twitter:image" content="images/social-preview-image.png">
+
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="stylesheet" href="recipe-book-1.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="brand">
+<img class="brand__logo" src="images/recipe-book.png" alt="Recipe book logo">
+<h1 class="brand__title">Recipe Book</h1>
+</div>
+
+<form class="search" action="#" role="search">
+<label class="sr-only" for="search-input">Search recipes</label>
+<input id="search-input" class="search__input" type="search" placeholder="Search recipes...">
+<button class="search__btn" type="submit" aria-label="Search">
+<img class="search__icon" src="images/search.svg" alt="">
+</button>
+</form>
+</header>
+
+<main class="page">
+<div id="recipe-container"></div>
+</main>
+
+<footer class="site-footer">
+<div class="footer__inner">
+<a href="https://www.flaticon.com/free-icons/recipe">
+Recipe icons created by Freepik - Flaticon
+</a>
+
+<div class="social">
+<a href="#"><img src="images/instagram_icon.svg" alt="Instagram icon"></a>
+<a href="#"><img src="images/youtube_icon.svg" alt="YouTube icon"></a>
+<a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background-color: #ddd;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: rgb(45, 107, 242);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  position: relative;
+  padding: 1rem 0 2.5rem;}
+
+/* ===== Menu Button ===== */
+.menu-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}  
+
+/* ===== Nav ===== */
+nav {
+  text-align: center;
+}
+
+nav a {
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-decoration: underline;   
+  color: white;
+}
+
+nav a:hover {
+ color: #dbe4ff;
+
+}
+
+.hide{
+  display: none;
+
+}
+
+/* ===== Main ===== */
+main {
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+}
+
+/* ===== Image Grid ===== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: rgb(45, 107, 242);
+  text-align: center;
+  width: 100%;}
+
+footer p{
+  color: #fff;
+}
+
+/* ===== Modal Viewer ===== */
+dialog {
+  position: relative;        /* anchor for absolute positioning */
+  padding: 1rem;
+  border: none;
+  background: transparent;
+}
+
+/* Image inside modal */
+dialog img {
+  max-width: 70vw;
+  max-height: 70vh;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Close button (X) */
+.close-viewer {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+
+  width: 32px;
+  height: 32px;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* ===== Tablet ===== */
+/*If using chrome on a macbook switch to safari or else the mobile verison is not vieable, 
+Google said the rendering rate is larger with chrome so I cant see it as the mobile verion
+on my laptop. */
+@media screen and (min-width: 700px) {
+
+  nav {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    border: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  nav.hide {
+    display: flex;
+  }
+}
+
+
+/* ===== Desktop ===== */
+@media screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+}
