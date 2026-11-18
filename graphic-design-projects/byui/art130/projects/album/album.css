@@ -1,38 +1,207 @@
-/* Slideshow */
-.slideshow {
-    position: relative;
-    width: 100%;
+
+/* ========================================
+   General Page Styling
+======================================== */
+
+* {
+    box-sizing: border-box;
 }
 
-/* Images */
-.slideshow img {
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* ========================================
+   Welcome Message
+======================================== */
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+body > p {
+    max-width: 750px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ========================================
+   Project Gallery
+======================================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Project Cards */
+
+.project-card {
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Titles */
+
+.project-card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Project Preview Images */
+
+.project-image {
+    display: block;
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: contain;
-    background-color: #222;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-/* Slideshow Buttons */
-.slideshow button {
+.project-image:hover {
+    transform: scale(1.02);
+}
+
+/* Project Descriptions */
+
+.project-card figcaption {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   Lightbox
+======================================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.93);
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+/* Display Lightbox */
+
+.lightbox.active {
+    display: flex;
+}
+
+/* Enlarged Image */
+
+.lightbox-image {
+    display: block;
+    max-width: 85%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* ========================================
+   Lightbox Buttons
+======================================== */
+
+.lightbox button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 12px;
+    background: none;
     border: none;
-    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     cursor: pointer;
+    font-size: 40px;
+    padding: 10px;
+    transition: color 0.2s ease;
 }
 
-.slideshow .prev {
-    left: 0;
+.lightbox button:hover {
+    color: #bdbdbd;
 }
 
-.slideshow .next {
-    right: 0;
+/* Close Button */
+
+.close-button {
+    top: 15px;
+    right: 25px;
+}
+
+/* Previous Button */
+
+.previous-button {
+    left: 20px;
+}
+
+/* Next Button */
+
+.next-button {
+    right: 20px;
 }
 
 /* Image Counter */
-.slide-count {
-    text-align: center;
+
+.image-counter {
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+/* ========================================
+   Mobile Layout
+======================================== */
+
+@media screen and (max-width: 700px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .project-image {
+        height: 250px;
+    }
+
+    .lightbox {
+        padding: 20px;
+    }
+
+    .lightbox-image {
+        max-width: 90%;
+        max-height: 70vh;
+    }
+
+    .lightbox button {
+        font-size: 30px;
+    }
+
+    .previous-button {
+        left: 5px;
+    }
+
+    .next-button {
+        right: 5px;
+    }
+
+    .close-button {
+        top: 5px;
+        right: 10px;
+    }
 }
