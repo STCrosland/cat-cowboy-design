@@ -1,3 +1,16 @@
+/* == Body == */
+
+/* == Fonts == */
+
+/* == Header == */
+header {
+    background-color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 /* == Welcom Messages == */
 .welcome-message {
     text-align: left;
