@@ -1,0 +1,38 @@
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+}
+
+/* Images */
+.slideshow img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background-color: #222;
+}
+
+/* Slideshow Buttons */
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+}
+
+.slideshow .prev {
+    left: 0;
+}
+
+.slideshow .next {
+    right: 0;
+}
+
+/* Image Counter */
+.slide-count {
+    text-align: center;
+}
