@@ -1,7 +1,8 @@
 
-/* ========================================
-   Project Images
-======================================== */
+/* == Projects  == */
+
+//Project Images
+
 
 const projectImages = [
 
@@ -34,37 +35,41 @@ const projectImages = [
     [
         "images/week3/week3-1.jpg",
         "images/week3/week3-2.jpg",
-        "images/week3/week3-3.jpg"
+        "images/week3/week3-3.jpg",
+        "images/week3/week3-4.jpg", 
+        "images/week3/week3-5.jpg",
+        "images/week3/week3-6.jpg",
+        "images/week3/week3-7.jpg",
+        "images/week3/week3-8.jpg"
     ],
 
     // Week 4 Images
     [
         "images/week4/week4-1.jpg",
         "images/week4/week4-2.jpg",
-        "images/week4/week4-3.jpg"
+        "images/week4/week4-3.jpg",
+        "images/week4/week4-4.jpg",
+        "images/week4/week4-5.jpg",
+        "images/week4/week4-6.jpg",
+        
     ]
 
 ];
 
 
-/* ========================================
-   Select Project Images
-======================================== */
+// Select Project Images
+
 
 const projectPreviews = document.querySelectorAll(".project-image");
 
 
-/* ========================================
-   Lightbox Variables
-======================================== */
+// Lightbox Variables
 
 let currentProject = 0;
 let currentImage = 0;
 
 
-/* ========================================
-   Create Lightbox
-======================================== */
+//Create Lightbox
 
 const lightbox = document.createElement("div");
 lightbox.classList.add("lightbox");
@@ -129,9 +134,7 @@ lightbox.appendChild(imageCounter);
 document.body.appendChild(lightbox);
 
 
-/* ========================================
-   Display Selected Image
-======================================== */
+//Display Selected Image
 
 function showImage() {
 
@@ -143,9 +146,7 @@ function showImage() {
 }
 
 
-/* ========================================
-   Open Lightbox
-======================================== */
+// Open Lightbox
 
 projectPreviews.forEach((preview) => {
 
@@ -164,9 +165,7 @@ projectPreviews.forEach((preview) => {
 });
 
 
-/* ========================================
-   Next Image
-======================================== */
+// Next Image
 
 nextButton.addEventListener("click", () => {
 
@@ -183,9 +182,7 @@ nextButton.addEventListener("click", () => {
 });
 
 
-/* ========================================
-   Previous Image
-======================================== */
+// Previous Image
 
 previousButton.addEventListener("click", () => {
 
@@ -202,9 +199,7 @@ previousButton.addEventListener("click", () => {
 });
 
 
-/* ========================================
-   Close Lightbox
-======================================== */
+//Close Lightbox
 
 closeButton.addEventListener("click", () => {
 
@@ -213,9 +208,8 @@ closeButton.addEventListener("click", () => {
 });
 
 
-/* ========================================
-   Close When Clicking Outside Image
-======================================== */
+//Close When Clicking Outside Image
+
 
 lightbox.addEventListener("click", (event) => {
 
@@ -228,9 +222,7 @@ lightbox.addEventListener("click", (event) => {
 });
 
 
-/* ========================================
-   Close With Escape Key
-======================================== */
+// Close With Escape Key
 
 document.addEventListener("keydown", (event) => {
 
