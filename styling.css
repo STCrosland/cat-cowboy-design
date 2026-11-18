@@ -6,11 +6,13 @@
 header {
     background-color: whitesmoke;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 /*= LOGO = */
 .logo {
-    position: center;
     top: 20px;
     left: 20px;
     padding: 20px;
