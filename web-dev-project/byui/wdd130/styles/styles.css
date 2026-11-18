@@ -205,3 +205,9 @@ footer {
     text-shadow: 1px 1px 3px #330033;
 }
 
+footer img {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+}
+
