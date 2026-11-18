@@ -1,39 +1,59 @@
+/* == Welcom Messages == */
+.welcome-message {
+    text-align: left;
+    margin: 40px;
+} 
 
-/* ========================================
-   General Page Styling
-======================================== */
+.welcome-message h1 {
+    text-align: center;
+    margin: 40px;
+}
 
-* {
+/* == Navigation == */
+nav{
+    background-color: #3032c6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
+    padding: auto;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
-}
-
-/* ========================================
-   Welcome Message
-======================================== */
-
-h1 {
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 1.5em;
+    display: block;
+    padding: 20px;
     text-align: center;
-    margin-top: 40px;
+    border-top: 4px #3032c6;
+    border-bottom: 4px #3032c6;    
+
 }
 
-body > p {
-    max-width: 750px;
-    margin: 20px auto 40px;
-    padding: 0 20px;
-    line-height: 1.6;
+nav a:hover{
+    background-color: #fff;
+    color: #3032c6;
+    border-top: 4px #3032c6;
+    border-bottom: 4px #3032c6;    
+}
+
+/* == Welcom Messages == */
+.welcome-message {
+    text-align: left;
+    margin: 40px;
+} 
+
+.welcome-message h1 {
     text-align: center;
+    margin: 40px;
 }
 
-/* ========================================
-   Project Gallery
-======================================== */
+/* == Project Gallery == */
 
 .gallery {
     display: grid;
@@ -85,9 +105,7 @@ body > p {
     line-height: 1.6;
 }
 
-/* ========================================
-   Lightbox
-======================================== */
+/* ==Lightbox == */
 
 .lightbox {
     display: none;
@@ -117,9 +135,7 @@ body > p {
     object-fit: contain;
 }
 
-/* ========================================
-   Lightbox Buttons
-======================================== */
+/* == Lightbox Buttons == */
 
 .lightbox button {
     position: absolute;
@@ -164,9 +180,7 @@ body > p {
     font-size: 16px;
 }
 
-/* ========================================
-   Mobile Layout
-======================================== */
+/* == Mobile Layout == */
 
 @media screen and (max-width: 700px) {
 
