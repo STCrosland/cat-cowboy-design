@@ -205,3 +205,14 @@ body > p {
         right: 10px;
     }
 }
+
+/* == Footer == */
+footer{
+    text-align: center;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+}
