@@ -1,3 +1,26 @@
+/* == Projects == */
+.art130-projects {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.art130-projects h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.art130-projects p {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.art130-projects h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
 /* == Footer == */
 footer{
     text-align: center;
