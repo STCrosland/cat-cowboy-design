@@ -1,70 +1,69 @@
+
 /* == Body == */
 
-/* == Fonts == */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #f5f5f5;
+}
+
 
 /* == Header == */
+
 header {
     background-color: whitesmoke;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+    padding: 20px;
 }
 
-/* == Welcom Messages == */
+
+/* == Welcome Messages == */
+
 .welcome-message {
     text-align: left;
     margin: 40px;
-} 
+}
 
-.welcome-message h1 {
+.welcome-message h2 {
     text-align: center;
     margin: 40px;
 }
 
+
 /* == Navigation == */
-nav{
+
+nav {
     background-color: #3032c6;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    height: 50px;
-    padding: auto;
+    min-height: 60px;
     box-sizing: border-box;
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
     font-family: Georgia;
     font-size: 1.5em;
     display: block;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    border-top: 4px #3032c6;
-    border-bottom: 4px #3032c6;    
-
+    border-top: 4px solid #3032c6;
+    border-bottom: 4px solid #3032c6;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #fff;
     color: #3032c6;
-    border-top: 4px #3032c6;
-    border-bottom: 4px #3032c6;    
 }
 
-/* == Welcom Messages == */
-.welcome-message {
-    text-align: left;
-    margin: 40px;
-} 
-
-.welcome-message h1 {
-    text-align: center;
-    margin: 40px;
-}
 
 /* == Finished Project Gallery == */
 
@@ -77,6 +76,7 @@ nav a:hover{
     padding: 20px;
 }
 
+
 /* Finished Project Cards */
 
 .project-card {
@@ -87,12 +87,14 @@ nav a:hover{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Finished Project Titles */
 
 .project-card h2 {
     margin-top: 0;
     text-align: center;
 }
+
 
 /* Finished Project Preview Images */
 
@@ -111,6 +113,7 @@ nav a:hover{
     transform: scale(1.02);
 }
 
+
 /* Finished Project Descriptions */
 
 .project-card figcaption {
@@ -118,7 +121,8 @@ nav a:hover{
     line-height: 1.6;
 }
 
-/* ==Lightbox == */
+
+/* == Lightbox == */
 
 .lightbox {
     display: none;
@@ -131,13 +135,16 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     padding: 60px;
+    box-sizing: border-box;
 }
+
 
 /* Display Lightbox */
 
 .lightbox.active {
     display: flex;
 }
+
 
 /* Enlarged Image */
 
@@ -148,76 +155,63 @@ nav a:hover{
     object-fit: contain;
 }
 
-/* == Lightbox Buttons == */
 
-.lightbox button {
+/* == Close Button == */
+
+.close-button {
     position: absolute;
+    top: 15px;
+    right: 25px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 45px;
     padding: 10px;
-    transition: color 0.2s ease;
 }
 
-.lightbox button:hover {
+.close-button:hover {
     color: #bdbdbd;
 }
 
-/* Close Button */
-
-.close-button {
-    top: 15px;
-    right: 25px;
-}
-/* == Projects == */
-.art130-projects {
-    width: 90%;
-    max-width: 1400px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 40px;
-}
-
-.art130-projects h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.art130-projects p {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-.art130-projects h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-/* Image Counter */
-
-.image-counter {
-    position: absolute;
-    bottom: 15px;
-    color: white;
-    font-size: 16px;
-}
 
 /* == Footer == */
-footer{
+
+footer {
     text-align: center;
+    padding: 20px;
 }
 
 footer img {
     height: 100px;
     width: 100px;
-    justify-content: center;
 }
+
 
 /* == Mobile Layout == */
 
 @media screen and (max-width: 700px) {
+
+    /* Navigation */
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 12px 8px;
+    }
+
+
+    /* Welcome Message */
+
+    .welcome-message {
+        margin: 20px;
+    }
+
+
+    /* Gallery */
 
     .gallery {
         grid-template-columns: 1fr;
@@ -228,6 +222,9 @@ footer img {
         height: 250px;
     }
 
+
+    /* Lightbox */
+
     .lightbox {
         padding: 20px;
     }
@@ -237,31 +234,9 @@ footer img {
         max-height: 70vh;
     }
 
-    .lightbox button {
-        font-size: 30px;
-    }
-
-    .previous-button {
-        left: 5px;
-    }
-
-    .next-button {
-        right: 5px;
-    }
-
     .close-button {
         top: 5px;
         right: 10px;
     }
-}
 
-/* == Footer == */
-footer{
-    text-align: center;
-}
-
-footer img {
-    height: 100px;
-    width: 100px;
-    justify-content: center;
 }
