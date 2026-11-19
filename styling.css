@@ -225,3 +225,25 @@ footer img {
     width: 100px;
     justify-content: center;
 }
+
+/* == Mobile Layout == */
+
+@media screen and (max-width: 700px) {
+
+    /* Navigation */
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 12px 8px;
+    }
+
+
+    /* Welcome Message */
+
+    .welcome-message {
+        margin: 20px;
+    }
