@@ -5,51 +5,20 @@
 
 const projectImages = [
 
-    // Week 1 Images
+    // Album 1 Images
     [
-        "images/week1/week1-1.jpg",
-        "images/week1/week1-2.jpg",
-        "images/week1/week1-3.jpg",
-        "images/week1/week1-4.jpg",
-        "images/week1/week1-5.jpg",
-        "images/week1/week1-6.jpg",
-        "images/week1/week1-7.jpg",
-        "images/week1/week1-8.jpg",
-        "images/week1/week1-9.jpg"
-
+        "images/finished-albump.jpg",
         
     ],
 
-    // Week 2 Images
+    // Logo 2 Images
     [
-        "images/week2/week2-1.jpg",
-        "images/week2/week2-2.jpg",
-        "images/week2/week2-3.jpg",
-        "images/week2/week2-4.jpg",
-        "images/week2/week2-5.jpg",
-        "images/week2/week2-6.jpg"
+        "images/finished-logo.jpg",
     ],
 
-    // Week 3 Images
+    // Poster 3 Images
     [
-        "images/week3/week3-1.jpg",
-        "images/week3/week3-2.jpg",
-        "images/week3/week3-3.jpg",
-        "images/week3/week3-4.jpg", 
-        "images/week3/week3-5.jpg",
-        "images/week3/week3-6.jpg",
-        "images/week3/week3-7.jpg",
-        "images/week3/week3-8.jpg"
-    ],
-
-    // Week 4 Images
-    [
-        "images/week4/week4-1.jpg",
-        "images/week4/week4-2.jpg",
-        "images/week4/week4-3.jpg",
-        "images/week4/week4-4.jpg",
-        "images/week4/week4-5.jpg",
-        "images/week4/week4-6.jpg",
+        "images/finished-poster.jpg",
         
     ]
 
