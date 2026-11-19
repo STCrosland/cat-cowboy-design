@@ -1,8 +1,7 @@
 
-/* == Projects  == */
+/* == Projects == */
 
-//Project Images
-
+// Project Images
 
 const projectImages = [
 
@@ -17,8 +16,6 @@ const projectImages = [
         "images/week1/week1-7.jpg",
         "images/week1/week1-8.jpg",
         "images/week1/week1-9.jpg"
-
-        
     ],
 
     // Week 2 Images
@@ -36,7 +33,7 @@ const projectImages = [
         "images/week3/week3-1.jpg",
         "images/week3/week3-2.jpg",
         "images/week3/week3-3.jpg",
-        "images/week3/week3-4.jpg", 
+        "images/week3/week3-4.jpg",
         "images/week3/week3-5.jpg",
         "images/week3/week3-6.jpg",
         "images/week3/week3-7.jpg",
@@ -50,15 +47,13 @@ const projectImages = [
         "images/week4/week4-3.jpg",
         "images/week4/week4-4.jpg",
         "images/week4/week4-5.jpg",
-        "images/week4/week4-6.jpg",
-        
+        "images/week4/week4-6.jpg"
     ]
 
 ];
 
 
 // Select Project Images
-
 
 const projectPreviews = document.querySelectorAll(".project-image");
 
@@ -69,7 +64,7 @@ let currentProject = 0;
 let currentImage = 0;
 
 
-//Create Lightbox
+// Create Lightbox
 
 const lightbox = document.createElement("div");
 lightbox.classList.add("lightbox");
@@ -134,7 +129,7 @@ lightbox.appendChild(imageCounter);
 document.body.appendChild(lightbox);
 
 
-//Display Selected Image
+// Display Selected Image
 
 function showImage() {
 
@@ -199,7 +194,7 @@ previousButton.addEventListener("click", () => {
 });
 
 
-//Close Lightbox
+// Close Lightbox
 
 closeButton.addEventListener("click", () => {
 
@@ -208,8 +203,7 @@ closeButton.addEventListener("click", () => {
 });
 
 
-//Close When Clicking Outside Image
-
+// Close When Clicking Outside Image
 
 lightbox.addEventListener("click", (event) => {
 
@@ -229,6 +223,29 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
 
         lightbox.classList.remove("active");
+
+    }
+
+});
+
+
+// Navigate With Keyboard Arrows
+
+document.addEventListener("keydown", (event) => {
+
+    if (!lightbox.classList.contains("active")) {
+        return;
+    }
+
+    if (event.key === "ArrowRight") {
+
+        nextButton.click();
+
+    }
+
+    if (event.key === "ArrowLeft") {
+
+        previousButton.click();
 
     }
 

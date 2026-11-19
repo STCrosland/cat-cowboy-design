@@ -1,8 +1,11 @@
+
 /* == Body == */
 
 /* == Fonts == */
 
+
 /* == Header == */
+
 header {
     background-color: whitesmoke;
     text-align: center;
@@ -11,19 +14,23 @@ header {
     display: flex;
 }
 
-/* == Welcom Messages == */
+
+/* == Welcome Messages == */
+
 .welcome-message {
     text-align: left;
     margin: 40px;
-} 
+}
 
 .welcome-message h1 {
     text-align: center;
     margin: 40px;
 }
 
+
 /* == Navigation == */
-nav{
+
+nav {
     background-color: #3032c6;
     width: 100%;
     display: flex;
@@ -35,7 +42,7 @@ nav{
     box-sizing: border-box;
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
     font-family: Georgia;
@@ -44,27 +51,16 @@ nav a{
     padding: 20px;
     text-align: center;
     border-top: 4px #3032c6;
-    border-bottom: 4px #3032c6;    
-
+    border-bottom: 4px #3032c6;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #fff;
     color: #3032c6;
     border-top: 4px #3032c6;
-    border-bottom: 4px #3032c6;    
+    border-bottom: 4px #3032c6;
 }
 
-/* == Welcom Messages == */
-.welcome-message {
-    text-align: left;
-    margin: 40px;
-} 
-
-.welcome-message h1 {
-    text-align: center;
-    margin: 40px;
-}
 
 /* == Project Gallery == */
 
@@ -77,6 +73,7 @@ nav a:hover{
     padding: 20px;
 }
 
+
 /* Project Cards */
 
 .project-card {
@@ -87,12 +84,14 @@ nav a:hover{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Project Titles */
 
 .project-card h2 {
     margin-top: 0;
     text-align: center;
 }
+
 
 /* Project Preview Images */
 
@@ -111,6 +110,7 @@ nav a:hover{
     transform: scale(1.02);
 }
 
+
 /* Project Descriptions */
 
 .project-card figcaption {
@@ -118,7 +118,8 @@ nav a:hover{
     line-height: 1.6;
 }
 
-/* ==Lightbox == */
+
+/* == Lightbox == */
 
 .lightbox {
     display: none;
@@ -131,13 +132,16 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     padding: 60px;
+    box-sizing: border-box;
 }
+
 
 /* Display Lightbox */
 
 .lightbox.active {
     display: flex;
 }
+
 
 /* Enlarged Image */
 
@@ -147,6 +151,7 @@ nav a:hover{
     max-height: 80vh;
     object-fit: contain;
 }
+
 
 /* == Lightbox Buttons == */
 
@@ -159,11 +164,14 @@ nav a:hover{
     font-size: 40px;
     padding: 10px;
     transition: color 0.2s ease;
+    display: block;
+    z-index: 1001;
 }
 
 .lightbox button:hover {
     color: #bdbdbd;
 }
+
 
 /* Close Button */
 
@@ -172,17 +180,24 @@ nav a:hover{
     right: 25px;
 }
 
+
 /* Previous Button */
 
 .previous-button {
     left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 /* Next Button */
 
 .next-button {
     right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 /* Image Counter */
 
@@ -192,6 +207,7 @@ nav a:hover{
     color: white;
     font-size: 16px;
 }
+
 
 /* == Mobile Layout == */
 
@@ -233,8 +249,10 @@ nav a:hover{
     }
 }
 
+
 /* == Footer == */
-footer{
+
+footer {
     text-align: center;
 }
 
