@@ -1,3 +1,4 @@
+```css
 /* == Body == */
 
 /* == Fonts == */
@@ -27,19 +28,19 @@ header {
 /* == Header Text == */
 
 /* == Navigation == */
-nav{
+nav {
     background-color: #038b05;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 5px;
     height: 50px;
-    padding: auto;
+    padding: 10px;
     box-sizing: border-box;
 }
 
-nav a{
+nav a {
     color: yellow;
     text-decoration: none;
     font-family: Georgia;
@@ -48,20 +49,45 @@ nav a{
     padding: 20px;
     text-align: center;
     border-top: 4px #f7eb00;
-    border-bottom: 4px #f7eb00;    
-
+    border-bottom: 4px #f7eb00;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #f7eb00;
     color: #038b05;
 }
 
-/* == Welcom Messages == */
+/* Menu Button */
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 249, 249);
+    margin: 5px 0;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* == Welcome Messages == */
 .welcome-message {
     text-align: left;
-    margin: 40px;
-} 
+    margin: 20px;
+}
 
 .welcome-message h1 {
     text-align: center;
@@ -74,7 +100,7 @@ nav a:hover{
     max-width: 1400px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -89,29 +115,30 @@ nav a:hover{
 }
 
 /* == About Developer == */
-#spencer-t-crosland{
+#spencer-t-crosland {
     text-align: left;
-    margin: 40px;
+    margin: 20px;
 }
 
 #spencer-t-crosland h2 {
     text-align: center;
     margin: 40px;
 }
-#spencer-t-crosland img{
+
+#spencer-t-crosland img {
     float: left;
     height: 350px;
     width: 350px;
     padding: 10px;
 }
 
-#why-cat-cowboy{
+#why-cat-cowboy {
     clear: both;
     text-align: left;
     margin: 40px;
 }
 
-#why-cat-cowboy h2{
+#why-cat-cowboy h2 {
     text-align: center;
     margin: 40px;
 }
@@ -122,7 +149,7 @@ nav a:hover{
     max-width: 1400px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -135,13 +162,13 @@ nav a:hover{
     grid-column: 1 / -1;
     text-align: center;
 }
+
 .byui-projects h2 {
     grid-column: 1 / -1;
     text-align: center;
 }
 
-
-/* == Wbesites == */
+/* == Websites == */
 .wdd131 img {
     height: 350px;
     width: 350px;
@@ -151,7 +178,8 @@ nav a:hover{
     height: 350px;
     width: 350px;
 }
-/* == Grphic Design == */
+
+/* == Graphic Design == */
 .art130 img {
     height: 350px;
     width: 350px;
@@ -164,59 +192,62 @@ nav a:hover{
 
 /* == Services == */
 
-/*Bundle Packages*/
-#bundle{
+/* Bundle Packages */
+#bundle {
     text-align: left;
     margin: 40px;
 }
 
-#bundle h2{
-    text-align: left;
-}
-#bundle h3{
-    text-align: left;
-}
-#bundle h4{
+#bundle h2 {
     text-align: left;
 }
 
-/*Graphics Design Packages*/
-#grphic-design{
+#bundle h3 {
+    text-align: left;
+}
+
+#bundle h4 {
+    text-align: left;
+}
+
+/* Graphics Design Packages */
+#grphic-design {
     text-align: left;
     margin: 40px;
 }
 
-#grphic-design h2{
+#grphic-design h2 {
     text-align: left;
 }
 
-#grphic-design h3{
+#grphic-design h3 {
     text-align: left;
 }
 
-#grphic-design h4{
+#grphic-design h4 {
     text-align: left;
 }
 
-/*Web Development Packages*/
-#web-development-design{
+/* Web Development Packages */
+#web-development-design {
     text-align: left;
     margin: 40px;
 }
 
-#web-development-design h2{
+#web-development-design h2 {
     text-align: left;
 }
 
-#web-development-design h3{
+#web-development-design h3 {
     text-align: left;
 }
 
-#web-development-design h4{
+#web-development-design h4 {
     text-align: left;
 }
+
 /* == Footer == */
-footer{
+footer {
     text-align: center;
 }
 
@@ -226,14 +257,19 @@ footer img {
     justify-content: center;
 }
 
-/* == Mobile Layout == */
+@media screen and (max-width: 1000px) {
 
-@media screen and (max-width: 700px) {
+    /* == Header == */
+    header {
+        flex-direction: row;
+        gap: 40px;
+        padding-left: 240px;
+    }
 
     /* == Navigation == */
-
     nav {
-        gap: 5px;
+        gap: 5opx;
+        height: fit-content;
     }
 
     nav a {
@@ -241,56 +277,51 @@ footer img {
         padding: 12px 8px;
     }
 
-    /* === Menu Button === */
-    .menu-btn { 
-        cursor: pointer; 
-        border: none; 
-        background-color: transparent; 
-    }
-
-    .bar1, .bar2, .bar3 {
-        width: 30px;
-        height: 4px;
-        background-color: rgb(255, 249, 249);
-        margin: 5px 0;
-    }
-
-    .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-    }
-    .change .bar2 { opacity: 0; }
-    .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-    }
-
-
-    /* Welcome Message */
-
+    /* == Welcome Message == */
     .welcome-message {
-        margin: 20px;
+        margin: 40px;
     }
 
     /* == Home == */
-    .featured-projects{
-        grid-template-columns: 1fr;
+    .featured-projects {
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 15px;
     }
 
-    .featured-projects img{
+    .featured-projects img {
         height: 250px;
     }
 
     /* == BYUI Projects Class == */
     .byui-projects {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 15px;
     }
-    
+
     /* == About the Developer == */
-    #spencer-t-crosland img{
-    float: left;
-    height: 150px;
-    width: 150px;
-    padding: 10px;
+    #spencer-t-crosland {
+        margin: 40px;
+    }
+
+    #spencer-t-crosland img {
+        float: left;
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+    }
 }
+
+@media screen and (min-width: 1001px) {
+
+    /* == Header == */
+
+    /* == Navigation == */
+
+    /* == Home == */
+
+    /* == BYUI Projects Class == */
+
+    /* == About the Developer == */
+
 }
+```
