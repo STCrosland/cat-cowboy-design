@@ -247,3 +247,14 @@ footer img {
     .welcome-message {
         margin: 20px;
     }
+
+    /* Welcome Message */
+    .featured-projects{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .featured-projects img{
+        height: 250px;
+    }
+}
