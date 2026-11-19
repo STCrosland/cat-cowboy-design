@@ -3,7 +3,12 @@
 ========================================= */
 
 /* == Body == */
+body{
+    background: url(images/styling/orange-ink-background.jpg);
+    background-size: cover;
+    background-position: center;
 
+}
 /* == Fonts == */
 
 /* == Header == */
