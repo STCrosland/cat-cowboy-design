@@ -161,13 +161,19 @@ nav a:hover {
     text-align: center;
 }
 
+
 .byui-projects h1,
-.byui-projects p,
 .byui-projects h2 {
     grid-column: 1 / -1;
     text-align: center;
 }
 
+.byui-projects p{
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
 /* == Websites == */
 .wdd131 img,
 .wdd130 img,
