@@ -61,7 +61,7 @@ nav {
     box-sizing: border-box;
 }
 
-/* == Menu Button == */
+/*  Menu Button */
 .menu-btn {
     display: block;
     background: none;
@@ -80,7 +80,7 @@ nav {
     transition: 0.4s;
 }
 
-/* == Navigation Links == */
+/* =Navigation Links */
 nav a {
     color: white;
     text-decoration: none;
@@ -103,7 +103,7 @@ nav a:hover {
     color: #3032c6;
 }
 
-/* == Menu Button Animation == */
+/*  Menu Button Animation  */
 .menu-btn.change .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
 }
@@ -297,12 +297,12 @@ footer img {
         min-height: 60px;
     }
 
-    /* == Hide Mobile Menu Button == */
+    /*  Hide Mobile Menu Button  */
     .menu-btn {
         display: none;
     }
 
-    /* == Desktop Navigation Links == */
+    /* Desktop Navigation Links  */
     nav a {
         display: block;
         font-size: 1.5em;
