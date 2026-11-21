@@ -1,48 +1,56 @@
+```css
+/* =========================================
+   MOBILE SETTINGS
+========================================= */
 
 /* == Body == */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
 
 /* == Fonts == */
 
 
 /* == Header == */
-
 header {
     background-color: whitesmoke;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 
 /* == Welcome Messages == */
-
 .welcome-message {
     text-align: left;
-    margin: 40px;
+    margin: 20px;
 }
 
 .welcome-message h1 {
     text-align: center;
-    margin: 40px;
+    margin: 20px;
 }
 
 
 /* == Navigation == */
-
 nav {
     background-color: #3032c6;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    height: 50px;
-    padding: auto;
+    gap: 0;
     box-sizing: border-box;
 }
 
-/*  Menu Button */
+/* Menu Button */
 .menu-btn {
     display: block;
     background: none;
@@ -61,7 +69,7 @@ nav {
     transition: 0.4s;
 }
 
-/* =Navigation Links */
+/* Navigation Links */
 nav a {
     color: white;
     text-decoration: none;
@@ -84,7 +92,7 @@ nav a:hover {
     color: #3032c6;
 }
 
-/*  Menu Button Animation  */
+/* Menu Button Animation */
 .menu-btn.change .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
 }
@@ -99,19 +107,17 @@ nav a:hover {
 
 
 /* == Project Gallery == */
-
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 30px;
     max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-
 /* Project Cards */
-
 .project-card {
     margin: 0;
     padding: 20px;
@@ -120,21 +126,17 @@ nav a:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Project Titles */
-
 .project-card h2 {
     margin-top: 0;
     text-align: center;
 }
 
-
 /* Project Preview Images */
-
 .project-image {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: contain;
     background-color: #e5e5e5;
     border-radius: 5px;
@@ -146,9 +148,7 @@ nav a:hover {
     transform: scale(1.02);
 }
 
-
 /* Project Descriptions */
-
 .project-card figcaption {
     margin-top: 15px;
     line-height: 1.6;
@@ -156,7 +156,6 @@ nav a:hover {
 
 
 /* == Lightbox == */
-
 .lightbox {
     display: none;
     position: fixed;
@@ -167,37 +166,31 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.93);
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-
 /* Display Lightbox */
-
 .lightbox.active {
     display: flex;
 }
 
-
 /* Enlarged Image */
-
 .lightbox-image {
     display: block;
-    max-width: 85%;
-    max-height: 80vh;
+    max-width: 90%;
+    max-height: 70vh;
     object-fit: contain;
 }
 
-
-/* == Lightbox Buttons == */
-
+/* Lightbox Buttons */
 .lightbox button {
     position: absolute;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
     transition: color 0.2s ease;
     display: block;
@@ -208,35 +201,27 @@ nav a:hover {
     color: #bdbdbd;
 }
 
-
 /* Close Button */
-
 .close-button {
-    top: 15px;
-    right: 25px;
+    top: 5px;
+    right: 10px;
 }
-
 
 /* Previous Button */
-
 .previous-button {
-    left: 20px;
+    left: 5px;
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 /* Next Button */
-
 .next-button {
-    right: 20px;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
 }
 
-
 /* Image Counter */
-
 .image-counter {
     position: absolute;
     bottom: 15px;
@@ -245,55 +230,113 @@ nav a:hover {
 }
 
 
-/* == Desktop Layout == */
-
-@media screen and (max-width: 700px) {
-
-    .gallery {
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    .project-image {
-        height: 250px;
-    }
-
-    .lightbox {
-        padding: 20px;
-    }
-
-    .lightbox-image {
-        max-width: 90%;
-        max-height: 70vh;
-    }
-
-    .lightbox button {
-        font-size: 30px;
-    }
-
-    .previous-button {
-        left: 5px;
-    }
-
-    .next-button {
-        right: 5px;
-    }
-
-    .close-button {
-        top: 5px;
-        right: 10px;
-    }
-}
-
-
 /* == Footer == */
-
 footer {
     text-align: center;
+    padding: 20px;
 }
 
 footer img {
     height: 100px;
     width: 100px;
-    justify-content: center;
 }
+
+
+/* =========================================
+   DESKTOP SETTINGS
+========================================= */
+
+@media screen and (min-width: 769px) {
+
+    /* == Header == */
+    header {
+        flex-direction: row;
+    }
+
+
+    /* == Welcome Messages == */
+    .welcome-message {
+        margin: 40px;
+    }
+
+    .welcome-message h1 {
+        margin: 40px;
+    }
+
+
+    /* == Navigation == */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        min-height: 60px;
+    }
+
+    /* Hide Mobile Menu Button */
+    .menu-btn {
+        display: none;
+    }
+
+    /* Desktop Navigation Links */
+    nav a {
+        display: block;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+
+    /* == Project Gallery == */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    /* Project Preview Images */
+    .project-image {
+        height: 300px;
+    }
+
+
+    /* == Lightbox == */
+    .lightbox {
+        padding: 60px;
+    }
+
+    /* Enlarged Image */
+    .lightbox-image {
+        max-width: 85%;
+        max-height: 80vh;
+    }
+
+    /* Lightbox Buttons */
+    .lightbox button {
+        font-size: 40px;
+    }
+
+    /* Close Button */
+    .close-button {
+        top: 15px;
+        right: 25px;
+    }
+
+    /* Previous Button */
+    .previous-button {
+        left: 20px;
+    }
+
+    /* Next Button */
+    .next-button {
+        right: 20px;
+    }
+
+
+    /* == Footer == */
+    footer img {
+        height: 100px;
+        width: 100px;
+    }
+}
+```
