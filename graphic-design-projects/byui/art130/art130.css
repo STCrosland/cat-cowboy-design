@@ -1,6 +1,9 @@
 
-/* == Body == */
+/* =========================================
+   MOBILE SETTINGS
+========================================= */
 
+/* == Body == */
 body {
     margin: 0;
     padding: 0;
@@ -10,55 +13,87 @@ body {
     background-size: cover;
 }
 
+/* == Fonts == */
+
 
 /* == Header == */
-
 header {
-    background-color: whitesmoke;
+    background: url(images/styling/orange-ink-background.jpg) fixed;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     padding: 20px;
 }
 
-
-/* == Welcome Messages == */
-
-.welcome-message {
-    text-align: left;
-    margin: 40px;
+header h1 {
+    color: #0c26e7;
+    font-family: "Isometra", serif;
 }
 
-.welcome-message h2 {
-    text-align: center;
-    margin: 40px;
+/* == Logo == */
+.logo {
+    padding: 20px;
 }
+
+.logo img {
+    width: 133px;
+    height: auto;
+    display: block;
+}
+
+/* == Header Text == */
 
 
 /* == Navigation == */
-
 nav {
     background-color: #3032c6;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    min-height: 60px;
+    gap: 0;
     box-sizing: border-box;
 }
 
+/* == Menu Button == */
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* == Navigation Links == */
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-family: Georgia;
-    font-size: 1.5em;
-    display: block;
+    font-size: 1.2em;
+    display: none;
     padding: 15px;
     text-align: center;
     border-top: 4px solid #3032c6;
     border-bottom: 4px solid #3032c6;
+}
+
+nav.open a {
+    display: block;
 }
 
 nav a:hover {
@@ -66,21 +101,44 @@ nav a:hover {
     color: #3032c6;
 }
 
+/* == Menu Button Animation == */
+.menu-btn.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+}
 
-/* == Finished Project Gallery == */
+.menu-btn.change .bar2 {
+    opacity: 0;
+}
 
+.menu-btn.change .bar3 {
+    transform: translate(0, -10px) rotate(45deg);
+}
+
+/* == Welcome Messages == */
+.welcome-message {
+    text-align: left;
+    margin: 20px;
+}
+
+.welcome-message h1,
+.welcome-message h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* == Finished Project  == */
+
+/*Gallery*/
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 30px;
     max-width: 1100px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 15px;
 }
 
-
 /* Finished Project Cards */
-
 .project-card {
     margin: 0;
     padding: 20px;
@@ -89,21 +147,17 @@ nav a:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Finished Project Titles */
-
 .project-card h2 {
     margin-top: 0;
     text-align: center;
 }
 
-
-/* Finished Project Preview Images */
-
+/*Finished Project Preview Images */
 .project-image {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: contain;
     background-color: #e5e5e5;
     border-radius: 5px;
@@ -115,17 +169,13 @@ nav a:hover {
     transform: scale(1.02);
 }
 
-
-/* Finished Project Descriptions */
-
+/* Finished Project Descriptions  */
 .project-card figcaption {
     margin-top: 15px;
     line-height: 1.6;
 }
 
-
-/* == Lightbox == */
-
+/* Lightbox  */
 .lightbox {
     display: none;
     position: fixed;
@@ -136,34 +186,28 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.93);
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-
 /* Display Lightbox */
-
 .lightbox.active {
     display: flex;
 }
 
-
 /* Enlarged Image */
-
 .lightbox-image {
     display: block;
-    max-width: 85%;
-    max-height: 80vh;
+    max-width: 90%;
+    max-height: 70vh;
     object-fit: contain;
 }
 
-
-/* == Close Button == */
-
+/* Close Button */
 .close-button {
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 5px;
+    right: 10px;
     background: none;
     border: none;
     color: white;
@@ -176,9 +220,39 @@ nav a:hover {
     color: #bdbdbd;
 }
 
+/* == Projects  == */
+#art130-projects {
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+#art130-projects h1,
+#art130-projects h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#art130-projects p {
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#album img,
+#logos img,
+#poster img {
+    max-width: 150px;
+    height: 150px;
+}
+
 
 /* == Footer == */
-
 footer {
     text-align: center;
     padding: 20px;
@@ -190,55 +264,101 @@ footer img {
 }
 
 
-/* == Mobile Layout == */
+/* =========================================
+   DESKTOP SETTINGS
+========================================= */
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 769px) {
 
-    /* Navigation */
-
-    nav {
-        gap: 5px;
+    /* == Header == */
+    header {
+        flex-direction: row;
     }
 
-    nav a {
-        font-size: 1em;
-        padding: 12px 8px;
-    }
-
-
-    /* Welcome Message */
-
-    .welcome-message {
-        margin: 20px;
-    }
-
-
-    /* Gallery */
-
-    .gallery {
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    .project-image {
-        height: 250px;
-    }
-
-
-    /* Lightbox */
-
-    .lightbox {
+    /* == Logo == */
+    .logo {
         padding: 20px;
     }
 
+    /* == Navigation == */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        min-height: 60px;
+    }
+
+    /* == Hide Mobile Menu Button == */
+    .menu-btn {
+        display: none;
+    }
+
+    /* == Desktop Navigation Links == */
+    nav a {
+        display: block;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    /* == Welcome Messages == */
+    .welcome-message {
+        margin: 40px;
+    }
+
+    .welcome-message h1,
+    .welcome-message h2 {
+        margin: 40px;
+    }
+
+    /* == Home == */
+    .art30-projects {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 40px auto;
+    }
+
+    /* == Projects Class == */
+    .art130-projects {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 40px auto;
+    }
+
+    /* == Websites == */
+
+
+    /* == Finished Project Gallery == */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    /* == Finished Project Preview Images == */
+    .project-image {
+        height: 300px;
+    }
+
+    /* == Lightbox == */
+    .lightbox {
+        padding: 60px;
+    }
+
+    /* == Enlarged Image == */
     .lightbox-image {
-        max-width: 90%;
-        max-height: 70vh;
+        max-width: 85%;
+        max-height: 80vh;
     }
 
+    /* == Close Button == */
     .close-button {
-        top: 5px;
-        right: 10px;
+        top: 15px;
+        right: 25px;
     }
 
+    /* == Footer == */
+    footer img {
+        height: 100px;
+        width: 100px;
+    }
 }
