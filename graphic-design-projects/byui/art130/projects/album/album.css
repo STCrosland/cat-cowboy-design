@@ -1,10 +1,11 @@
-```css
+
 /* =========================================
    MOBILE SETTINGS
 ========================================= */
 
 /* == Body == */
 body {
+    background: url(../../images/styling/homeImage.jpg);
     margin: 0;
     padding: 0;
     font-family: Georgia, serif;
