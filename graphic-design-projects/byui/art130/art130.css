@@ -117,6 +117,7 @@ nav a:hover {
 
 .welcome-message h1 {
     text-align: center;
+    color: #0800fd;
 }
 
 .welcome-message p {
@@ -230,10 +231,10 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-.art130-projects h1,
-.art130-projects h2 {
+.art130-projects h1 {
     grid-column: 1 / -1;
     text-align: center;
+    color: #0800fd;
 }
 
 /*Text Background Box*/
@@ -285,8 +286,25 @@ nav a:hover {
 
 #course h1,
 #teacher h1,
-#student h1 {
+#student h1{
     text-align: center;
+    color: #0800fd;
+}
+
+#course h2,
+#teacher h2,
+#student h2 {
+    text-align: left;
+    color: #0800fd;
+    padding-left: 5px;
+}
+
+#course h3,
+#teacher h3,
+#student h3 {
+    text-align: left;
+    color: #0050fd;
+    padding-left: 10px;
 }
 
 #course p,
@@ -308,11 +326,25 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 20px;
+
+}
+
+footer p{
+    color: #0050fd;
+    background-color: #fff;
+    border: 3px solid #0800fd;
+    padding: 5px;
+    box-shadow: 0 0 15px #ffffff;
+    overflow: auto;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 footer img {
     height: 100px;
     width: 100px;
+    
 }
 
 

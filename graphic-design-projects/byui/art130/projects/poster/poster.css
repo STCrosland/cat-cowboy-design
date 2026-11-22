@@ -50,6 +50,7 @@ header h1 {
 
 .welcome-message h1 {
     text-align: center;
+    color: #0800fd;
 }
 
 .welcome-message p {
@@ -253,6 +254,18 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 20px;
+}
+
+footer p{
+    color: #0050fd;
+    background-color: #fff;
+    border: 3px solid #0800fd;
+    padding: 5px;
+    box-shadow: 0 0 15px #ffffff;
+    overflow: auto;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 footer img {
