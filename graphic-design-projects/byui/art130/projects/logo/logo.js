@@ -25,7 +25,9 @@ const projectImages = [
         "images/week1/week1-6.jpg",
         "images/week1/week1-7.jpg",
         "images/week1/week1-8.jpg",
-        "images/week1/week1-9.jpg"
+        "images/week1/week1-9.jpg",
+        "images/week1/week1-10.jpg"
+
     ],
 
     // Week 2 Images
@@ -47,7 +49,8 @@ const projectImages = [
         "images/week3/week3-5.jpg",
         "images/week3/week3-6.jpg",
         "images/week3/week3-7.jpg",
-        "images/week3/week3-8.jpg"
+        "images/week3/week3-8.jpg",
+        "images/week3/week3-9.jpg"
     ],
 
     // Week 4 Images
@@ -57,7 +60,9 @@ const projectImages = [
         "images/week4/week4-3.jpg",
         "images/week4/week4-4.jpg",
         "images/week4/week4-5.jpg",
-        "images/week4/week4-6.jpg"
+        "images/week4/week4-6.jpg",
+        "images/week4/week4-7.jpg",
+        "images/week4/week4-8.jpg"
     ]
 
 ];
