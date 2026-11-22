@@ -14,11 +14,6 @@ body {
 }
 
 /*== Fonts == */
-.archivo-black-regular {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 /* == Header == */
 header {
@@ -36,8 +31,7 @@ header {
 
 header h1 {
     color: #0c26e7;
-    font-family: "Archivo Black";
-    font-size: 80px;
+    font-family: "Isometra", serif;
 }
 
 /* == Navigation == */
@@ -124,7 +118,6 @@ nav a:hover {
 .welcome-message h1 {
     text-align: center;
     color: #0800fd;
-    
 }
 
 .welcome-message p {
