@@ -24,8 +24,7 @@ const projectImages = [
         "images/week1/week1-5.jpg",
         "images/week1/week1-6.jpg",
         "images/week1/week1-7.jpg",
-        "images/week1/week1-8.jpg",
-        "images/week1/week1-9.jpg"
+        "images/week1/week1-8.jpg"
     ],
 
     // Week 2 Images
@@ -35,7 +34,9 @@ const projectImages = [
         "images/week2/week2-3.jpg",
         "images/week2/week2-4.jpg",
         "images/week2/week2-5.jpg",
-        "images/week2/week2-6.jpg"
+        "images/week2/week2-6.jpg",
+        "images/week2/week2-7.jpg",
+        "images/week2/week2-8.jpg"
     ],
 
     // Week 3 Images
