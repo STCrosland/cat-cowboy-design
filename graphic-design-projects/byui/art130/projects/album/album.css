@@ -5,10 +5,12 @@
 
 /* == Body == */
 body {
-    background: url(../../images/styling/homeImage.jpg);
     margin: 0;
     padding: 0;
     font-family: Georgia, serif;
+    background: url(../../images/styling/homeImage.jpg) fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 /* == Fonts == */
@@ -26,16 +28,27 @@ header {
     box-sizing: border-box;
 }
 
-
 /* == Welcome Messages == */
 .welcome-message {
-    text-align: left;
-    margin: 20px;
+    width: 92%;
+    max-width: 1200px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.85);
+    border: 3px solid #0800fd;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    box-sizing: border-box;
 }
 
 .welcome-message h1 {
     text-align: center;
-    margin: 20px;
+}
+
+.welcome-message p {
+    padding: 10px;
 }
 
 
@@ -257,11 +270,11 @@ footer img {
 
     /* == Welcome Messages == */
     .welcome-message {
-        margin: 40px;
-    }
-
-    .welcome-message h1 {
-        margin: 40px;
+        width: 90%;
+        margin: 20px auto;
+        border-width: 5px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #ffffff;
     }
 
 
