@@ -28,6 +28,11 @@ header {
     box-sizing: border-box;
 }
 
+header h1 {
+    color: #0c26e7;
+    font-family: "Isometra", serif;
+}
+
 /* == Welcome Messages == */
 .welcome-message {
     width: 92%;
