@@ -257,12 +257,15 @@ nav a:hover {
 #album img,
 #logos img,
 #poster img {
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    height: 200px;
-    object-fit: contain;
-    margin: 0 auto;
+    border: 3px solid #0800fd;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ffffff;
+  display: block;
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  max-height: 200px;
+  margin: 0 auto;
 }
 
 /* == About == */
