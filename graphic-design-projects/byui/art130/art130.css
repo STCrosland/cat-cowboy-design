@@ -13,7 +13,7 @@ body {
     background-size: cover;
 }
 
-/*== Fonts ==*/
+/*== Fonts == */
 
 /* == Header == */
 header {
@@ -42,7 +42,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
     box-sizing: border-box;
 }
 
@@ -103,24 +102,24 @@ nav a:hover {
 
 /* == Welcome Messages == */
 .welcome-message {
-    width: 92%;                  
-    max-width: 1200px;                     
+    width: 92%;
+    max-width: 1200px;
     margin: 15px auto;
     background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #0800fd;  
+    border: 3px solid #0800fd;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
-    overflow-x: hidden;          
+    overflow-x: hidden;
     display: grid;
-    grid-template-rows: auto auto 1fr auto; 
+    grid-template-rows: auto auto 1fr auto;
     box-sizing: border-box;
 }
 
-.welcome-message h1{
+.welcome-message h1 {
     text-align: center;
 }
 
-.welcome-message p{
+.welcome-message p {
     padding: 10px;
 }
 
@@ -237,13 +236,24 @@ nav a:hover {
     text-align: center;
 }
 
+/*Text Background Box*/
+.art130-projects h1 {
+    width: fit-content;
+    background-color: rgba(25, 18, 245, 0.85);
+    padding: 6px 12px;
+    color: #ffffff;
+}
+
 .art130-projects p {
     grid-column: 1 / -1;
     text-align: left;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    background-color: rgba(25, 18, 245, 0.85);
+    color: #ffffff;
+    padding: 6px 12px;
+    margin: 20px;
 }
 
+/*Images*/
 #album img,
 #logos img,
 #poster img {
@@ -255,63 +265,40 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/*Text Background Box*/
-.art130-projects h1 {
-  width: fit-content;
-  background-color: rgba(25, 18, 245, 10);
-  padding: 6px 12px;
-  color: #ffffff;
-}
-.art130-projects p{
-  background-color: rgba(25, 18, 245, 10);
-  color: #ffffff;
-  padding: 6px 12px;
-  margin: 20px;
-}
 /* == About == */
-#course  {
-    width: 92%;                  
-    max-width: 1200px;           
-    min-height: 100vh;           
+#course,
+#teacher,
+#student {
+    width: 92%;
+    max-width: 1200px;
     margin: 15px auto;
     background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #0800fd;  
+    border: 3px solid #0800fd;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
-    overflow-x: hidden;          
-    display: grid;
-    grid-template-rows: auto auto 1fr auto; 
+    overflow: auto;
     box-sizing: border-box;
 }
 
-#teacher  {
-   width: 92%;                  
-    max-width: 1200px;           
-    min-height: 100vh;           
-    margin: 15px auto;
-    background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #0800fd;  
-    border-radius: 15px;
-    box-shadow: 0 0 15px #ffffff;
-    overflow-x: hidden;          
-    display: grid;
-    grid-template-rows: auto auto 1fr auto; 
-    box-sizing: border-box;
+#course h1,
+#teacher h1,
+#student h1 {
+    text-align: center;
 }
 
-#student  {
-   width: 92%;                  
-    max-width: 1200px;           
-    min-height: 100vh;           
-    margin: 15px auto;
-    background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #0800fd;  
-    border-radius: 15px;
-    box-shadow: 0 0 15px #ffffff;
-    overflow-x: hidden;          
-    display: grid;
-    grid-template-rows: auto auto 1fr auto; 
-    box-sizing: border-box;
+#course p,
+#teacher p,
+#student p {
+    padding: 10px;
+}
+
+#teacher img,
+#student img {
+    float: left;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 20px 20px 0;
 }
 
 /* == Footer == */
@@ -359,7 +346,7 @@ footer img {
     }
 
     /* == Welcome Messages == */
-    .welcome-message{
+    .welcome-message {
         width: 90%;
         margin: 20px auto;
         border-width: 5px;
@@ -379,10 +366,9 @@ footer img {
     }
 
     /*Display layout*/
-      .art130-projects {
+    .art130-projects {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        margin: 40px auto;
         gap: 40px;
     }
 
@@ -393,7 +379,6 @@ footer img {
         max-width: 100%;
         height: 250px;
     }
-
 
     /* == Finished Project Gallery == */
     .gallery {
@@ -427,7 +412,9 @@ footer img {
 
     /* == About The Course == */
 
-    #course{
+    #course,
+    #teacher,
+    #student {
         width: 90%;
         margin: 20px auto;
         border-width: 5px;
@@ -435,21 +422,14 @@ footer img {
         box-shadow: 0 0 20px #ffffff;
     }
 
-    #teacher{
-        width: 90%;
-        margin: 20px auto;
-        border-width: 5px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px #ffffff;
+    #teacher img,
+    #student img {
+        height: 350px;
+        width: 350px;
+        padding: 10px;
+        max-width: none;
     }
 
-    #Student{
-        width: 90%;
-        margin: 20px auto;
-        border-width: 5px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px #ffffff;
-    }
     /* == Footer == */
     footer img {
         height: 100px;
