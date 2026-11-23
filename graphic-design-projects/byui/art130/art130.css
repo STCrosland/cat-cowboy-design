@@ -231,29 +231,19 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-.art130-projects h1 {
-    grid-column: 1 / -1;
-    text-align: center;
+#album h2,
+#logos h2,
+#poster h2 {
+    background: rgba(255, 255, 255, 0.85);
+    border: 3px solid #0800fd;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
     color: #0800fd;
-}
-
-/*Text Background Box*/
-.art130-projects h1 {
+    padding: 10px;
+    display: block;
     width: fit-content;
-    background-color: rgba(25, 18, 245, 0.85);
-    padding: 6px 12px;
-    color: #ffffff;
+    margin: 0 auto;
 }
-
-.art130-projects p {
-    grid-column: 1 / -1;
-    text-align: left;
-    background-color: rgba(25, 18, 245, 0.85);
-    color: #ffffff;
-    padding: 6px 12px;
-    margin: 20px;
-}
-
 /*Images*/
 #album img,
 #logos img,
@@ -445,6 +435,11 @@ footer img {
         right: 25px;
     }
 
+    #album h2,
+    #logos h2,
+    #poster h2{
+        margin: 40px auto;
+    }
     /* == About The Course == */
 
     #course,
