@@ -32,15 +32,12 @@ const projectImages = [
 
     // Week 1 Images
     [
-        "images/styling/coming-soon.jpg",
-        "images/week1/week1-2.jpg",
-        "images/week1/week1-3.jpg",
-        "images/week1/week1-4.jpg",
-        "images/week1/week1-5.jpg",
-        "images/week1/week1-6.jpg",
-        "images/week1/week1-7.jpg",
-        "images/week1/week1-8.jpg",
-        "images/week1/week1-9.jpg"
+        "images/projects/week1-1.jpg",
+        "images/projects/week1-2.jpg",
+        "images/projects/week1-3.jpg",
+        "images/projects/week1-4.jpg",
+        "images/projects/week1-5.jpg"
+        
     ],
 
     // Week 2 Images
@@ -85,7 +82,9 @@ const activityImages = [
     // Activity 1 Images
     [
         "images/activities/activity1-1.jpg",
-        "images/activities/activity1-2.jpg"
+        "images/activities/activity1-2.jpg",
+        "images/activities/activity1-3.jpg",
+        "images/activities/activity1-4.jpg"
     ],
 
     // Activity 2 Images
