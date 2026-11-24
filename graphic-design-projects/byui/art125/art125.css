@@ -1,8 +1,11 @@
+
 /* =========================================
    MOBILE SETTINGS
 ========================================= */
 
+
 /* == Body == */
+
 body {
     margin: 0;
     padding: 0;
@@ -11,10 +14,13 @@ body {
     background-position: center;
     background-size: cover;
 }
-/*== Fonts == */
+
+
+/* == Fonts == */
 
 
 /* == Header == */
+
 header {
     background: #ffff;
     background-position: center;
@@ -33,7 +39,9 @@ header h1 {
     font-family: "Isometra", serif;
 }
 
+
 /* == Navigation == */
+
 nav {
     background-color: #ffff;
     width: 100%;
@@ -44,7 +52,9 @@ nav {
     box-sizing: border-box;
 }
 
-/*  Menu Button */
+
+/* Menu Button */
+
 .menu-btn {
     display: block;
     background: none;
@@ -63,7 +73,9 @@ nav {
     transition: 0.4s;
 }
 
-/* =Navigation Links */
+
+/* Navigation Links */
+
 nav a {
     color: #ffff;
     text-decoration: none;
@@ -86,7 +98,9 @@ nav a:hover {
     color: #ffff;
 }
 
-/*  Menu Button Animation  */
+
+/* Menu Button Animation */
+
 .menu-btn.change .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
 }
@@ -99,7 +113,9 @@ nav a:hover {
     transform: translate(0, -10px) rotate(45deg);
 }
 
+
 /* == Welcome Messages == */
+
 .welcome-message {
     width: 92%;
     max-width: 1200px;
@@ -122,10 +138,13 @@ nav a:hover {
 .welcome-message p {
     padding: 10px;
 }
-/* == Home Page ==*/
-/* = Finished Project  = */
 
-/*Gallery*/
+
+/* == Home Page == */
+
+
+/* Finished Project Gallery */
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -136,7 +155,9 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+
 /* Finished Project Cards */
+
 .project-card {
     margin: 0;
     padding: 20px;
@@ -145,13 +166,17 @@ nav a:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Finished Project Titles */
+
 .project-card h2 {
     margin-top: 0;
     text-align: center;
 }
 
-/*Finished Project Preview Images */
+
+/* Finished Project Preview Images */
+
 .project-image {
     display: block;
     width: 100%;
@@ -167,13 +192,17 @@ nav a:hover {
     transform: scale(1.02);
 }
 
-/* Finished Project Descriptions  */
+
+/* Finished Project Descriptions */
+
 .project-card figcaption {
     margin-top: 15px;
     line-height: 1.6;
 }
 
-/* Lightbox  */
+
+/* == Lightbox == */
+
 .lightbox {
     display: none;
     position: fixed;
@@ -188,12 +217,16 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+
 /* Display Lightbox */
+
 .lightbox.active {
     display: flex;
 }
 
+
 /* Enlarged Image */
+
 .lightbox-image {
     display: block;
     max-width: 90%;
@@ -201,7 +234,9 @@ nav a:hover {
     object-fit: contain;
 }
 
+
 /* Close Button */
+
 .close-button {
     position: absolute;
     top: 5px;
@@ -218,7 +253,49 @@ nav a:hover {
     color: #bdbdbd;
 }
 
+
+/* Previous and Next Buttons */
+
+.previous-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.previous-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.previous-button:hover,
+.next-button:hover {
+    color: #bdbdbd;
+}
+
+
+/* Image Counter */
+
+.image-counter {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+
 /* == Projects Page == */
+
 #project-pages {
     width: 90%;
     max-width: 1400px;
@@ -230,25 +307,26 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-#project1 h2,
-#project2 h2,
-#project3 h2 {
+
+/* Project Headings */
+
+.project h2 {
     background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #ffff;
+    border: 3px solid #0800fd;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
-    color: #ffff;
+    color: #0800fd;
     padding: 10px;
     display: block;
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 15px;
 }
 
-/*Images*/
-#project1 img,
-#project2 img,
-#project3 img {
-    border: 3px solid #ffff;
+
+/* Project Images */
+
+.project img {
+    border: 3px solid #0800fd;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
     display: block;
@@ -259,7 +337,16 @@ nav a:hover {
     margin: 0 auto;
 }
 
+
+/* Project Links */
+
+.project a {
+    text-decoration: none;
+}
+
+
 /* == About == */
+
 #section-one,
 #section-two,
 #section-three {
@@ -276,7 +363,7 @@ nav a:hover {
 
 #section-one h1,
 #section-two h1,
-#section-three h1{
+#section-three h1 {
     text-align: center;
     color: #ffff;
 }
@@ -313,14 +400,15 @@ nav a:hover {
     margin: 0 20px 20px 0;
 }
 
+
 /* == Footer == */
+
 footer {
     text-align: center;
     padding: 20px;
-
 }
 
-footer p{
+footer p {
     color: #ffff;
     background-color: #fff;
     border: 3px solid #ffff;
@@ -335,5 +423,4 @@ footer p{
 footer img {
     height: 100px;
     width: 100px;
-    
 }

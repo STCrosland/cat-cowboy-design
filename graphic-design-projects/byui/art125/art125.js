@@ -27,7 +27,7 @@ const projectImages = [
 
     // Week 1 Images
     [
-        "images/week1/week1-1.jpg",
+        "images/styling/coming-soon.jpg",
         "images/week1/week1-2.jpg",
         "images/week1/week1-3.jpg",
         "images/week1/week1-4.jpg",
