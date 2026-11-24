@@ -37,105 +37,105 @@ const projectImages = [
         "images/projects/week1/week1-3.jpg",
         "images/projects/week1/week1-4.jpg",
         "images/projects/week1/week1-5.jpg"
-        
     ],
 
     // Week 2 Images
-    [   "images/projects/week1/week2-1.jpg",
-        "images/projects/week1/week2-2.jpg",
-        "images/projects/week1/week2-3.jpg",
-        "images/projects/week1/week2-4.jpg",
-        "images/projects/week1/week2-5.jpg"
+    [
+        "images/projects/week2/week2-1.jpg",
+        "images/projects/week2/week2-2.jpg",
+        "images/projects/week2/week2-3.jpg",
+        "images/projects/week2/week2-4.jpg",
+        "images/projects/week2/week2-5.jpg"
     ],
 
     // Week 3 Images
     [
-        "images/projects/week1/week3-1.jpg",
-        "images/projects/week1/week3-2.jpg",
-        "images/projects/week1/week3-3.jpg",
-        "images/projects/week1/week3-4.jpg",
-        "images/projects/week1/week3-5.jpg"
+        "images/projects/week3/week3-1.jpg",
+        "images/projects/week3/week3-2.jpg",
+        "images/projects/week3/week3-3.jpg",
+        "images/projects/week3/week3-4.jpg",
+        "images/projects/week3/week3-5.jpg"
     ],
 
     // Week 4 Images
     [
-        "images/projects/week1/week4-1.jpg",
-        "images/projects/week1/week4-2.jpg",
-        "images/projects/week1/week4-3.jpg",
-        "images/projects/week1/week4-4.jpg",
-        "images/projects/week1/week4-5.jpg"
-    ]
+        "images/projects/week4/week4-1.jpg",
+        "images/projects/week4/week4-2.jpg",
+        "images/projects/week4/week4-3.jpg",
+        "images/projects/week4/week4-4.jpg",
+        "images/projects/week4/week4-5.jpg"
+    ],
 
     // Week 5 Images
     [
-        "images/projects/week1/week5-1.jpg",
-        "images/projects/week1/week5-2.jpg",
-        "images/projects/week1/week5-3.jpg",
-        "images/projects/week1/week5-4.jpg",
-        "images/projects/week1/week5-5.jpg"
-    ]
+        "images/projects/week5/week5-1.jpg",
+        "images/projects/week5/week5-2.jpg",
+        "images/projects/week5/week5-3.jpg",
+        "images/projects/week5/week5-4.jpg",
+        "images/projects/week5/week5-5.jpg"
+    ],
 
     // Week 6 Images
     [
-        "images/projects/week1/week6-1.jpg",
-        "images/projects/week1/week6-2.jpg",
-        "images/projects/week1/week6-3.jpg",
-        "images/projects/week1/week6-4.jpg",
-        "images/projects/week1/week6-5.jpg"
-    ]
-    
+        "images/projects/week6/week6-1.jpg",
+        "images/projects/week6/week6-2.jpg",
+        "images/projects/week6/week6-3.jpg",
+        "images/projects/week6/week6-4.jpg",
+        "images/projects/week6/week6-5.jpg"
+    ],
+
     // Week 7 Images
     [
-        "images/projects/week1/week7-1.jpg",
-        "images/projects/week1/week7-2.jpg",
-        "images/projects/week1/week7-3.jpg",
-        "images/projects/week1/week7-4.jpg",
-        "images/projects/week1/week7-5.jpg"
-    ]
-    
+        "images/projects/week7/week7-1.jpg",
+        "images/projects/week7/week7-2.jpg",
+        "images/projects/week7/week7-3.jpg",
+        "images/projects/week7/week7-4.jpg",
+        "images/projects/week7/week7-5.jpg"
+    ],
+
     // Week 8 Images
     [
-        "images/projects/week1/week8-1.jpg",
-        "images/projects/week1/week8-2.jpg",
-        "images/projects/week1/week8-3.jpg",
-        "images/projects/week1/week8-4.jpg",
-        "images/projects/week1/week8-5.jpg"
-    ]
-    
+        "images/projects/week8/week8-1.jpg",
+        "images/projects/week8/week8-2.jpg",
+        "images/projects/week8/week8-3.jpg",
+        "images/projects/week8/week8-4.jpg",
+        "images/projects/week8/week8-5.jpg"
+    ],
+
     // Week 9 Images
     [
-        "images/projects/week1/week9-1.jpg",
-        "images/projects/week1/week9-2.jpg",
-        "images/projects/week1/week9-3.jpg",
-        "images/projects/week1/week9-4.jpg",
-        "images/projects/week1/week9-5.jpg"
-    ]
-    
+        "images/projects/week9/week9-1.jpg",
+        "images/projects/week9/week9-2.jpg",
+        "images/projects/week9/week9-3.jpg",
+        "images/projects/week9/week9-4.jpg",
+        "images/projects/week9/week9-5.jpg"
+    ],
+
     // Week 10 Images
     [
-        "images/projects/week1/week10-1.jpg",
-        "images/projects/week1/week40-2.jpg",
-        "images/projects/week1/week10-3.jpg",
-        "images/projects/week1/week10-4.jpg",
-        "images/projects/week1/week10-5.jpg"
-    ]
-    
+        "images/projects/week10/week10-1.jpg",
+        "images/projects/week10/week10-2.jpg",
+        "images/projects/week10/week10-3.jpg",
+        "images/projects/week10/week10-4.jpg",
+        "images/projects/week10/week10-5.jpg"
+    ],
+
     // Week 11 Images
     [
-        "images/projects/week1/week11-1.jpg",
-        "images/projects/week1/week11-2.jpg",
-        "images/projects/week1/week11-3.jpg",
-        "images/projects/week1/week11-4.jpg",
-        "images/projects/week1/week11-5.jpg"
-    ]
-    
+        "images/projects/week11/week11-1.jpg",
+        "images/projects/week11/week11-2.jpg",
+        "images/projects/week11/week11-3.jpg",
+        "images/projects/week11/week11-4.jpg",
+        "images/projects/week11/week11-5.jpg"
+    ],
+
     // Week 12 Images
     [
-        "images/projects/week1/week12-1.jpg",
-        "images/projects/week1/week12-2.jpg",
-        "images/projects/week1/week12-3.jpg",
-        "images/projects/week1/week12-4.jpg",
-        "images/projects/week1/week12-5.jpg"
+        "images/projects/week12/week12-1.jpg",
+        "images/projects/week12/week12-2.jpg",
+        "images/projects/week12/week12-3.jpg",
+        "images/projects/week12/week12-4.jpg",
+        "images/projects/week12/week12-5.jpg"
     ]
 
 ];
@@ -167,7 +167,7 @@ const activityImages = [
         "images/activities/activity3-2.jpg",
         "images/activities/activity3-3.jpg",
         "images/activities/activity3-4.jpg"
-    ]
+    ],
 
     // Activity 4 Images
     [
@@ -175,7 +175,7 @@ const activityImages = [
         "images/activities/activity4-2.jpg",
         "images/activities/activity4-3.jpg",
         "images/activities/activity4-4.jpg"
-    ]
+    ],
 
     // Activity 5 Images
     [
@@ -183,7 +183,7 @@ const activityImages = [
         "images/activities/activity5-2.jpg",
         "images/activities/activity5-3.jpg",
         "images/activities/activity5-4.jpg"
-    ]
+    ],
 
     // Activity 6 Images
     [
@@ -191,7 +191,7 @@ const activityImages = [
         "images/activities/activity6-2.jpg",
         "images/activities/activity6-3.jpg",
         "images/activities/activity6-4.jpg"
-    ]
+    ],
 
     // Activity 7 Images
     [
@@ -199,7 +199,7 @@ const activityImages = [
         "images/activities/activity7-2.jpg",
         "images/activities/activity7-3.jpg",
         "images/activities/activity7-4.jpg"
-    ]
+    ],
 
     // Activity 8 Images
     [
@@ -207,7 +207,7 @@ const activityImages = [
         "images/activities/activity8-2.jpg",
         "images/activities/activity8-3.jpg",
         "images/activities/activity8-4.jpg"
-    ]
+    ],
 
     // Activity 9 Images
     [
@@ -215,7 +215,7 @@ const activityImages = [
         "images/activities/activity9-2.jpg",
         "images/activities/activity9-3.jpg",
         "images/activities/activity9-4.jpg"
-    ]
+    ],
 
     // Activity 10 Images
     [
@@ -223,7 +223,7 @@ const activityImages = [
         "images/activities/activity10-2.jpg",
         "images/activities/activity10-3.jpg",
         "images/activities/activity10-4.jpg"
-    ]
+    ],
 
     // Activity 11 Images
     [
@@ -231,9 +231,9 @@ const activityImages = [
         "images/activities/activity11-2.jpg",
         "images/activities/activity11-3.jpg",
         "images/activities/activity11-4.jpg"
-    ]
+    ],
 
-    // Activity  Images
+    // Activity 12 Images
     [
         "images/activities/activity12-1.jpg",
         "images/activities/activity12-2.jpg",
