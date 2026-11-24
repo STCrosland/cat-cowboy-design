@@ -1,0 +1,339 @@
+/* =========================================
+   MOBILE SETTINGS
+========================================= */
+
+/* == Body == */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background: url() fixed;
+    background-position: center;
+    background-size: cover;
+}
+/*== Fonts == */
+
+
+/* == Header == */
+header {
+    background: #ffff;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: #ffff;
+    font-family: "Isometra", serif;
+}
+
+/* == Navigation == */
+nav {
+    background-color: #ffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/*  Menu Button */
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #ffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* =Navigation Links */
+nav a {
+    color: #ffff;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 1.2em;
+    display: none;
+    padding: 15px;
+    text-align: center;
+    border-top: 4px solid #ffff;
+    border-bottom: 4px solid #ffff;
+    box-sizing: border-box;
+}
+
+nav.open a {
+    display: block;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #ffff;
+}
+
+/*  Menu Button Animation  */
+.menu-btn.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+}
+
+.menu-btn.change .bar2 {
+    opacity: 0;
+}
+
+.menu-btn.change .bar3 {
+    transform: translate(0, -10px) rotate(45deg);
+}
+
+/* == Welcome Messages == */
+.welcome-message {
+    width: 92%;
+    max-width: 1200px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.85);
+    border: 3px solid #ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    box-sizing: border-box;
+}
+
+.welcome-message h1 {
+    text-align: center;
+    color: #ffff;
+}
+
+.welcome-message p {
+    padding: 10px;
+}
+/* == Home Page ==*/
+/* = Finished Project  = */
+
+/*Gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Finished Project Cards */
+.project-card {
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Finished Project Titles */
+.project-card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/*Finished Project Preview Images */
+.project-image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+}
+
+/* Finished Project Descriptions  */
+.project-card figcaption {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Lightbox  */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.93);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Display Lightbox */
+.lightbox.active {
+    display: flex;
+}
+
+/* Enlarged Image */
+.lightbox-image {
+    display: block;
+    max-width: 90%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.close-button:hover {
+    color: #bdbdbd;
+}
+
+/* == Projects Page == */
+#project-pages {
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#project1 h2,
+#project2 h2,
+#project3 h2 {
+    background: rgba(255, 255, 255, 0.85);
+    border: 3px solid #ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
+    color: #ffff;
+    padding: 10px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/*Images*/
+#project1 img,
+#project2 img,
+#project3 img {
+    border: 3px solid #ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
+    display: block;
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+/* == About == */
+#section-one,
+#section-two,
+#section-three {
+    width: 92%;
+    max-width: 1200px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.85);
+    border: 3px solid #ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+#section-one h1,
+#section-two h1,
+#section-three h1{
+    text-align: center;
+    color: #ffff;
+}
+
+#section-one h2,
+#section-two h2,
+#section-three h2 {
+    text-align: left;
+    color: #ffff;
+    padding-left: 5px;
+}
+
+#section-one h3,
+#section-two h3,
+#section-three h3 {
+    text-align: left;
+    color: #ffff;
+    padding-left: 10px;
+}
+
+#section-one p,
+#section-two p,
+#section-three p {
+    padding: 10px;
+}
+
+#section-one img,
+#section-two img,
+#section-three img {
+    float: left;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 20px 20px 0;
+}
+
+/* == Footer == */
+footer {
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer p{
+    color: #ffff;
+    background-color: #fff;
+    border: 3px solid #ffff;
+    padding: 5px;
+    box-shadow: 0 0 15px #ffffff;
+    overflow: auto;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+    
+}
