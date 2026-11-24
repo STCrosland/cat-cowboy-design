@@ -13,12 +13,17 @@ if (btn && menu) {
         menu.classList.toggle('open');
         btn.classList.toggle('change');
 
+        btn.setAttribute(
+            'aria-expanded',
+            menu.classList.contains('open')
+        );
+
     });
 
 }
 
 
-/* == Projects == */
+/* == Projects and Activities == */
 
 
 // Project Images
@@ -73,9 +78,41 @@ const projectImages = [
 ];
 
 
-// Select Finished Project Images
+// Activity Images
+
+const activityImages = [
+
+    // Activity 1 Images
+    [
+        "images/activities/activity1-1.jpg",
+        "images/activities/activity1-2.jpg"
+    ],
+
+    // Activity 2 Images
+    [
+        "images/activities/activity2-1.jpg",
+        "images/activities/activity2-2.jpg"
+    ],
+
+    // Activity 3 Images
+    [
+        "images/activities/activity3-1.jpg",
+        "images/activities/activity3-2.jpg"
+    ]
+
+];
+
+
+// Select Gallery Images
 
 const projectPreviews = document.querySelectorAll(".project-image");
+
+
+// Select Correct Image Array
+
+const galleryImages = document.body.dataset.gallery === "activities"
+    ? activityImages
+    : projectImages;
 
 
 // Lightbox Variables
@@ -97,7 +134,7 @@ const enlargedImage = document.createElement("img");
 
 enlargedImage.classList.add("lightbox-image");
 
-enlargedImage.alt = "Enlarged project image";
+enlargedImage.alt = "Enlarged gallery image";
 
 
 // Create Close Button
@@ -162,10 +199,10 @@ document.body.appendChild(lightbox);
 
 function showImage() {
 
-    enlargedImage.src = projectImages[currentProject][currentImage];
+    enlargedImage.src = galleryImages[currentProject][currentImage];
 
     imageCounter.textContent =
-        `${currentImage + 1} / ${projectImages[currentProject].length}`;
+        `${currentImage + 1} / ${galleryImages[currentProject].length}`;
 
 }
 
@@ -179,6 +216,10 @@ projectPreviews.forEach((preview) => {
         currentProject = Number(preview.dataset.project);
 
         currentImage = 0;
+
+        if (!galleryImages[currentProject]) {
+            return;
+        }
 
         showImage();
 
@@ -195,7 +236,7 @@ nextButton.addEventListener("click", () => {
 
     currentImage++;
 
-    if (currentImage >= projectImages[currentProject].length) {
+    if (currentImage >= galleryImages[currentProject].length) {
 
         currentImage = 0;
 
@@ -214,7 +255,7 @@ previousButton.addEventListener("click", () => {
 
     if (currentImage < 0) {
 
-        currentImage = projectImages[currentProject].length - 1;
+        currentImage = galleryImages[currentProject].length - 1;
 
     }
 

@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Georgia, serif;
-    background: url() fixed;
+    background: url("images/styling/homeImage.jpg") fixed;
     background-position: center;
     background-size: cover;
 }
@@ -22,7 +22,7 @@ body {
 /* == Header == */
 
 header {
-    background: #ffff;
+    background: #333;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    color: #ffff;
+    color: white;
     font-family: "Isometra", serif;
 }
 
@@ -43,7 +43,7 @@ header h1 {
 /* == Navigation == */
 
 nav {
-    background-color: #ffff;
+    background-color: #333;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ nav {
 .bar3 {
     width: 30px;
     height: 4px;
-    background-color: #ffff;
+    background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -77,16 +77,17 @@ nav {
 /* Navigation Links */
 
 nav a {
-    color: #ffff;
+    color: white;
     text-decoration: none;
-    font-family: Georgia;
+    font-family: Georgia, serif;
     font-size: 1.2em;
     display: none;
     padding: 15px;
     text-align: center;
-    border-top: 4px solid #ffff;
-    border-bottom: 4px solid #ffff;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     box-sizing: border-box;
+    width: 100%;
 }
 
 nav.open a {
@@ -94,8 +95,8 @@ nav.open a {
 }
 
 nav a:hover {
-    background-color: #fff;
-    color: #ffff;
+    background-color: white;
+    color: #333;
 }
 
 
@@ -121,7 +122,7 @@ nav a:hover {
     max-width: 1200px;
     margin: 15px auto;
     background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #ffff;
+    border: 3px solid white;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
     overflow-x: hidden;
@@ -132,11 +133,12 @@ nav a:hover {
 
 .welcome-message h1 {
     text-align: center;
-    color: #ffff;
+    color: #333;
 }
 
 .welcome-message p {
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -354,7 +356,7 @@ nav a:hover {
     max-width: 1200px;
     margin: 15px auto;
     background: rgba(255, 255, 255, 0.85);
-    border: 3px solid #ffff;
+    border: 3px solid white;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
     overflow: auto;
@@ -365,14 +367,14 @@ nav a:hover {
 #section-two h1,
 #section-three h1 {
     text-align: center;
-    color: #ffff;
+    color: #333;
 }
 
 #section-one h2,
 #section-two h2,
 #section-three h2 {
     text-align: left;
-    color: #ffff;
+    color: #333;
     padding-left: 5px;
 }
 
@@ -380,7 +382,7 @@ nav a:hover {
 #section-two h3,
 #section-three h3 {
     text-align: left;
-    color: #ffff;
+    color: #333;
     padding-left: 10px;
 }
 
@@ -409,9 +411,9 @@ footer {
 }
 
 footer p {
-    color: #ffff;
-    background-color: #fff;
-    border: 3px solid #ffff;
+    color: #333;
+    background-color: white;
+    border: 3px solid white;
     padding: 5px;
     box-shadow: 0 0 15px #ffffff;
     overflow: auto;
@@ -423,4 +425,45 @@ footer p {
 footer img {
     height: 100px;
     width: 100px;
+}
+
+
+/* =========================================
+   DESKTOP SETTINGS
+========================================= */
+
+@media screen and (min-width: 768px) {
+
+
+    /* == Navigation == */
+
+    nav {
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        width: auto;
+        border: none;
+        padding: 15px 25px;
+    }
+
+
+    /* == Gallery == */
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* == Projects Page == */
+
+    #project-pages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
